@@ -22,7 +22,7 @@
         android:layout_below="@+id/accept_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:text="Your Order has been \naccepted"
+        android:text="@string/your_order_has_been_naccepted"
         android:textAlignment="center"
         android:textColor="#181725"
         android:textSize="28sp" />
@@ -35,7 +35,7 @@
         android:lineSpacingExtra="3sp"
         android:layout_marginTop="20dp"
         android:layout_below="@id/tv1"
-        android:text="Your items has been placcd and is on \nits way to being processed"
+        android:text="@string/your_items_has_been_placcd_and_is_on_nits_way_to_being_processed"
         android:textColor="#7C7C7C"
         android:textSize="16sp"
         android:textAlignment="center"/>
@@ -48,7 +48,7 @@
         android:layout_marginHorizontal="30sp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/purple_pk"
-        android:text="Track Order"
+        android:text="@string/track_order"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:cornerRadius="10dp" />
@@ -61,7 +61,7 @@
         android:layout_marginHorizontal="30sp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@color/white"
-        android:text="Back to Home"
+        android:text="@string/back_to_home"
         android:textColor="@color/purple_pk"
         android:textSize="16sp"
         app:cornerRadius="10dp" />

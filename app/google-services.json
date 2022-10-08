@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740189755072",
+    "project_id": "pankaj-knitting-handicraft",
+    "storage_bucket": "pankaj-knitting-handicraft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740189755072:android:8ea2ebbab158027de8bf25",
+        "android_client_info": {
+          "package_name": "com.example.pankajknitting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740189755072-fvde84rvl4no4aius0un29j3midjk4aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHY4MOLphYVAtNsPJ0_NDeKK8Caa9J7t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740189755072-fvde84rvl4no4aius0un29j3midjk4aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

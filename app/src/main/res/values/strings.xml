@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Pankaj Knitting</string>
+    <string name="best_selling">Best Selling</string>
+    <string name="see_all">See all</string>
+    <string name="search_store">Search Store</string>
+    <string name="exclusive_offer">Exclusive Offer</string>
+    <string name="woolen_products">Woolen Products</string>
+    <string name="shop">Shop</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="favourite">Favourite</string>
+    <string name="account">Account</string>
+    <string name="welcome_to_nhandicraft_galaxy">Welcome to \nHandicraft Galaxy</string>
+    <string name="get_your_favourites_at_your_doorstop">Get your favourites at your doorstop</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_your_handicraft_s_item_with_handicraft_galaxy">Get your handicraft’s item with Handicraft Galaxy</string>
+    <string name="or_sign_in_with_google">or sign in with google</string>
+    <string name="_91">+91</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="your_order_has_been_naccepted">Your Order has been \naccepted</string>
+    <string name="your_items_has_been_placcd_and_is_on_nits_way_to_being_processed">Your items has been placcd and is on \nits way to being processed</string>
+    <string name="track_order">Track Order</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="john_doe">John Doe</string>
+    <string name="johndoe12_gmail_com">johndoe12@gmail.com</string>
+    <string name="orders">Orders</string>
+    <string name="my_details">My Details</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="log_out">Log Out</string>
 </resources>

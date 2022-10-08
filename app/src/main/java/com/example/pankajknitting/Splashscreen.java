@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import java.util.Objects;
+
 public class Splashscreen extends AppCompatActivity {
 
     @Override
@@ -20,7 +22,7 @@ public class Splashscreen extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        },3000);
+        },1000);
 
     }
 }

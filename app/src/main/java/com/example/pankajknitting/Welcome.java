@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.example.pankajknitting.databinding.ActivityWelcomeBinding;
 
+import java.util.Objects;
+
 public class Welcome extends AppCompatActivity {
     ActivityWelcomeBinding binding;
 
@@ -22,7 +24,7 @@ public class Welcome extends AppCompatActivity {
         binding.btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Welcome.this, Account.class));
+                startActivity(new Intent(Welcome.this, Signin.class));
 
             }
         });

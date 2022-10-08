@@ -2,9 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".Welcome">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="1000dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_marginTop="-350dp"
+        app:srcCompat="@mipmap/ic_motitoran_welcome_foreground" />
 
     <ImageView
         android:id="@+id/logo"
@@ -21,10 +31,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50sp"
         android:layout_marginBottom="180dp"
-        android:text="Welcome to \nHandicraft Galaxy"
+        android:text="@string/welcome_to_nhandicraft_galaxy"
         android:textAlignment="center"
         android:textColor="#E54343"
-        android:textSize="30sp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/tv2"
@@ -33,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="150dp"
-        android:text="Get your favourites at your doorstop"
+        android:text="@string/get_your_favourites_at_your_doorstop"
         android:textSize="14sp" />
 
     <Button
@@ -44,7 +54,7 @@
         android:layout_marginHorizontal="50sp"
         android:layout_marginBottom="70dp"
         android:backgroundTint="@color/purple_pk"
-        android:text="Get Started"
+        android:text="@string/get_started"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:cornerRadius="10dp" />

@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
-        android:text="John Doe"
+        android:text="@string/john_doe"
         android:layout_toEndOf="@+id/profile_pic"
         android:textColor="#181725"
         android:textSize="20sp" />
@@ -32,7 +32,7 @@
         android:id="@+id/uEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="johndoe12@gmail.com"
+        android:text="@string/johndoe12_gmail_com"
         android:layout_marginStart="30dp"
         android:layout_marginTop="1dp"
         android:layout_toEndOf="@+id/profile_pic"
@@ -57,7 +57,7 @@
             android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_end_24"
             android:textSize="18sp"
-            android:text="Orders"/>
+            android:text="@string/orders"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_end_24"
-            android:text="My Details"
+            android:text="@string/my_details"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_end_24"
-            android:text="Delivery Address"
+            android:text="@string/delivery_address"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_end_24"
-            android:text="Help"
+            android:text="@string/help"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_end_24"
-            android:text="About"
+            android:text="@string/about"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -150,7 +150,7 @@
         android:backgroundTint="#F2F3F2"
         android:drawableLeft="@drawable/ic_logout_24"
         android:drawableTint="@color/purple_pk"
-        android:text=" Log Out    "
+        android:text="@string/log_out"
         android:textColor="@color/purple_pk"
         android:textSize="16sp"
         app:cornerRadius="10dp" />

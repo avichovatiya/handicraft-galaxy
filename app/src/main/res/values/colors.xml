@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple_pk">#673AB7</color>
+    <color name="search_bar">#F2F3F2</color>
 </resources>
