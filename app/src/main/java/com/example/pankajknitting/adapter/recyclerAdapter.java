@@ -1,6 +1,7 @@
 package com.example.pankajknitting.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pankajknitting.R;
 import com.example.pankajknitting.model.recyclerModel;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -38,7 +40,8 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // to set data to textview and imageview of each card layout
         recyclerModel model = recyclerModelArrayList.get(position);
-        holder.img.setImageResource(model.getImg());
+//        holder.img.setImageResource(model.getImg());
+        Picasso.get().load(model.getImg()).into(holder.img);
         holder.desc.setText("" + model.getDesc());
         holder.price.setText("Rs. " + model.getPrice());
     }

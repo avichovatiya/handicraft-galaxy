@@ -55,7 +55,8 @@ public class Signin extends AppCompatActivity {
         binding.editTextPhone.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                startActivity(new Intent(Signin.this, Home.class));
+//                startActivity(new Intent(Signin.this, OrderConfirmed.class));
+//                finish();
             }
         });
 
@@ -63,13 +64,13 @@ public class Signin extends AppCompatActivity {
         binding.btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                startActivity(new Intent(Signin.this, MainActivity.class));
                 signInM();// declaration outside oncreate method
             }
         });
         if(mAuth.getCurrentUser()!=null){
-            Intent i
-                    = new Intent(Signin.this, Home.class);
-            startActivity(i);
+            startActivity(new Intent(Signin.this, MainActivity.class));
+            finish();
         }
 
         // Configure sign-in to request the user's ID, email address, and basic
@@ -104,11 +105,15 @@ public class Signin extends AppCompatActivity {
         //we use try catch block because of Exception.
         try {
             GoogleSignInAccount account = task.getResult(ApiException.class);
-            Toast.makeText(Signin.this,"Signed In successfully",Toast.LENGTH_LONG).show();
+            Toast.makeText(Signin.this,"Signed In successfully" , Toast.LENGTH_SHORT).show();
+
             //SignIn successful now show authentication
             FirebaseGoogleAuth(account);
-            Intent a = new Intent(Signin.this, Home.class);
+            Toast.makeText(Signin.this, "Welcome "+account.getDisplayName(), Toast.LENGTH_LONG).show();
+
+            Intent a = new Intent(Signin.this, MainActivity.class);
             startActivity(a);
+            finish();
         } catch (ApiException e) {
             e.printStackTrace();
             Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
@@ -124,20 +129,24 @@ public class Signin extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    //  Toast.makeText(SignIn.this,"successful",Toast.LENGTH_LONG).show();
+                      Toast.makeText(Signin.this,"successful",Toast.LENGTH_LONG).show();
                     Snackbar snackbar = Snackbar.make(binding.getRoot(),"Google SignIn Successful",Snackbar.LENGTH_SHORT);
                     snackbar.show();
                     FirebaseUser firebaseUser = mAuth.getCurrentUser();
                     Users user=new Users();
-                    user.setUserId(firebaseUser.getUid());
-                    user.setUserName(firebaseUser.getDisplayName());
-                    user.setProfilepic(firebaseUser.getPhotoUrl());
+                    user.setUserId(account.getId());
+                    user.setUserName(account.getDisplayName());
+                    user.setProfilepic(account.getPhotoUrl());
+                    user.setMail(account.getEmail());
                     ref=database.getReference().child("Users").child(firebaseUser.getUid()); //check if node exsist if not will create
                     ref.setValue(user); // update or add value to the node
 
+                    Toast.makeText(Signin.this, account.getDisplayName(), Toast.LENGTH_LONG).show();
+
                     Intent intent
-                            = new Intent(Signin.this, Home.class);
+                            = new Intent(Signin.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                 }
                 else {
                     Toast.makeText(Signin.this,"Failed!",Toast.LENGTH_LONG).show();

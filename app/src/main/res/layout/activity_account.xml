@@ -4,155 +4,200 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/account"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/profile_pic"
-        android:layout_width="60dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="20dp"
-        android:src="@mipmap/ic_profile_pic_foreground"
-        app:srcCompat="@mipmap/ic_profile_pic_foreground"
-        tools:srcCompat="@mipmap/ic_profile_pic_foreground" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_profile_pic_foreground"
+            app:srcCompat="@mipmap/ic_profile_pic_foreground"
+            tools:srcCompat="@mipmap/ic_profile_pic_foreground" />
 
-    <TextView
-        android:id="@+id/uName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/john_doe"
-        android:layout_toEndOf="@+id/profile_pic"
-        android:textColor="#181725"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/uEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/johndoe12_gmail_com"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="1dp"
-        android:layout_toEndOf="@+id/profile_pic"
-        android:layout_below="@+id/uName"
-        android:textColor="#7C7C7C"
-        android:textSize="16sp"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tOrders"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:hintTextColor="#181725"
-        android:layout_marginHorizontal="10dp"
-        app:startIconDrawable="@drawable/ic_orders_24"
-        app:startIconTint="#181725"
-        android:layout_below="@+id/uEmail">
-
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/uName"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_end_24"
-            android:textSize="18sp"
-            android:text="@string/orders"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:text="@string/john_doe"
+            android:textColor="#181725"
+            android:textSize="20sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tMyDetails"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:hintTextColor="#181725"
-        android:layout_marginHorizontal="10dp"
-        app:startIconDrawable="@drawable/ic_my_details_24"
-        app:startIconTint="#181725"
-        android:layout_below="@+id/tOrders">
-
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/uEmail"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_end_24"
-            android:text="@string/my_details"
-            android:textSize="18sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@+id/uName"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:text="@string/johndoe12_gmail_com"
+            android:textColor="#7C7C7C"
+            android:textSize="16sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tDeliveryAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:hintTextColor="#181725"
-        android:layout_marginHorizontal="10dp"
-        app:startIconDrawable="@drawable/ic_address_24"
-        app:startIconTint="#181725"
-        android:layout_below="@+id/tMyDetails">
-
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        <View
+            android:id="@+id/lineLineZero"
+            android:background="@color/gray_300"
+            android:layout_height="1dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_end_24"
-            android:text="@string/delivery_address"
-            android:textSize="18sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@+id/profile_pic"
+            android:layout_margin="15dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tHelp"
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnrectangleeightytwo"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:hintTextColor="#181725"
-        android:layout_marginHorizontal="10dp"
-        app:startIconDrawable="@drawable/ic_help_24"
-        app:startIconTint="#181725"
-        android:layout_below="@+id/tDeliveryAddress">
+        android:layout_below="@+id/lineLineZero"
+        android:layout_above="@id/bottom_navigation"
+        android:orientation="vertical">
 
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
-            android:layout_width="match_parent"
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOrders"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_end_24"
-            android:text="@string/help"
-            android:textSize="18sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:hintTextColor="#181725"
-        android:layout_marginHorizontal="10dp"
-        app:startIconDrawable="@drawable/ic_about_24"
-        app:startIconTint="#181725"
-        android:layout_below="@+id/tHelp">
-
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_end_24"
-            android:text="@string/about"
-            android:textSize="18sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:singleLine="true"
+            android:text="Orders"
+            android:clickable="true"
+            android:drawablePadding="25dp"
+            style="@style/txtGilroysemibold18"
+            app:drawableEndCompat="@drawable/img_arrowright_14x8"
+            app:drawableStartCompat="@drawable/img_bag" />
 
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineLineTwo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtMyDetails"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="My Details"
+            android:clickable="true"
+            android:drawablePadding="25dp"
+            app:drawableEndCompat="@drawable/img_arrowright_14x8"
+            style="@style/txtGilroysemibold18"
+            app:drawableStartCompat="@drawable/img_ticket" />
+
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineLineThree"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDeliveryAddres"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:clickable="true"
+            android:text="DeliveryAddres"
+            android:drawablePadding="25dp"
+            app:drawableStartCompat="@drawable/img_location"
+            app:drawableEndCompat="@drawable/img_arrowright_14x8"
+            style="@style/txtGilroysemibold18"/>
+
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineLineFour"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtHelp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="Help"
+            android:clickable="true"
+            android:drawablePadding="25dp"
+            app:drawableEndCompat="@drawable/img_arrowright_14x8"
+            style="@style/txtGilroysemibold18"
+            app:drawableStartCompat="@drawable/img_question" />
+
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineLineFive"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtAbout"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="About"
+            android:clickable="true"
+            android:drawablePadding="25dp"
+            app:drawableEndCompat="@drawable/img_arrowright_14x8"
+            style="@style/txtGilroysemibold18"
+            app:drawableStartCompat="@drawable/img_warning" />
+
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineLineSix"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"/>
+
+    </LinearLayout>
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnLogout"-->
+<!--        style="@style/btnLogoutRounded"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginHorizontal="24dp"-->
+<!--        android:layout_marginBottom="200dp"-->
+<!--        android:drawableStart="@drawable/ic_logout_24"-->
+<!--        android:drawableTint="@color/purple_pk"-->
+<!--        android:paddingHorizontal="30dp"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="Log Out"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:cornerRadius="10dp"/>-->
     <Button
         android:id="@+id/back_to_home"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="30sp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="150dp"
         android:backgroundTint="#F2F3F2"
+        android:textAllCaps="false"
         android:drawableLeft="@drawable/ic_logout_24"
         android:drawableTint="@color/purple_pk"
         android:text="@string/log_out"
+        android:textSize="20sp"
         android:textColor="@color/purple_pk"
-        android:textSize="16sp"
         app:cornerRadius="10dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:paddingVertical="5dp"
+        app:backgroundTint="@color/search_bar"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </RelativeLayout>

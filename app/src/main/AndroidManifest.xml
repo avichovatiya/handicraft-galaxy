@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pankajknitting">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PankajKnitting"
         tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderConfirmed"
+            android:exported="false" />
+        <activity
+            android:name=".OrderAccepted"
+            android:exported="false" />
         <activity
             android:name=".Home"
             android:exported="false" />
@@ -36,10 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".OrderAccepted"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

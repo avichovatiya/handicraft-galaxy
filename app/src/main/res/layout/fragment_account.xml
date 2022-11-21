@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_profile_pic_foreground"
+            app:srcCompat="@mipmap/ic_profile_pic_foreground"
+            tools:srcCompat="@mipmap/ic_profile_pic_foreground" />
+
+        <TextView
+            android:id="@+id/uName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:text="@string/john_doe"
+            android:textColor="#181725"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/uEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uName"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:text="@string/johndoe12_gmail_com"
+            android:textColor="#7C7C7C"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/lineLineZero"
+            android:background="@color/gray_300"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/profile_pic"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnrectangleeightytwo"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/lineLineZero"
+            android:orientation="vertical">
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtOrders"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="Orders"
+                android:clickable="true"
+                android:drawablePadding="25dp"
+                style="@style/txtGilroysemibold18"
+                app:drawableEndCompat="@drawable/img_arrowright_14x8"
+                app:drawableStartCompat="@drawable/img_bag" />
+
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineTwo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="15dp"/>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMyDetails"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="My Details"
+                android:clickable="true"
+                android:drawablePadding="25dp"
+                app:drawableEndCompat="@drawable/img_arrowright_14x8"
+                style="@style/txtGilroysemibold18"
+                app:drawableStartCompat="@drawable/img_ticket"
+                android:focusable="true" />
+
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineThree"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"/>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDeliveryAddres"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:clickable="true"
+                android:text="DeliveryAddres"
+                android:drawablePadding="25dp"
+                app:drawableStartCompat="@drawable/img_location"
+                app:drawableEndCompat="@drawable/img_arrowright_14x8"
+                style="@style/txtGilroysemibold18"
+                android:focusable="true" />
+
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineFour"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"/>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtHelp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="Help"
+                android:clickable="true"
+                android:drawablePadding="25dp"
+                app:drawableEndCompat="@drawable/img_arrowright_14x8"
+                style="@style/txtGilroysemibold18"
+                app:drawableStartCompat="@drawable/img_question"
+                android:focusable="true" />
+
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineFive"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"/>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAbout"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="About"
+                android:clickable="true"
+                android:drawablePadding="25dp"
+                app:drawableEndCompat="@drawable/img_arrowright_14x8"
+                style="@style/txtGilroysemibold18"
+                app:drawableStartCompat="@drawable/img_warning"
+                android:focusable="true" />
+
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineSix"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"/>
+
+        </LinearLayout>
+
+        <!--    <androidx.appcompat.widget.AppCompatButton-->
+        <!--        android:id="@+id/btnLogout"-->
+        <!--        style="@style/btnLogoutRounded"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="65dp"-->
+        <!--        android:layout_alignParentBottom="true"-->
+        <!--        android:layout_marginHorizontal="24dp"-->
+        <!--        android:layout_marginBottom="200dp"-->
+        <!--        android:drawableStart="@drawable/ic_logout_24"-->
+        <!--        android:drawableTint="@color/purple_pk"-->
+        <!--        android:paddingHorizontal="30dp"-->
+        <!--        android:singleLine="true"-->
+        <!--        android:text="Log Out"-->
+        <!--        android:textAllCaps="false"-->
+        <!--        app:cornerRadius="10dp"/>-->
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="30sp"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="#F2F3F2"
+            android:drawableLeft="@drawable/ic_logout_24"
+            android:drawableTint="@color/purple_pk"
+            android:text="@string/log_out"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_pk"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

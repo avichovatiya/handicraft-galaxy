@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".OrderAccepted"
+    tools:context=".OrderConfirmed"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -33,14 +33,14 @@
         android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:lineSpacingExtra="3sp"
-        android:layout_marginTop="20dp"
         android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="3sp"
         android:text="@string/your_items_has_been_placcd_and_is_on_nits_way_to_being_processed"
+        android:textAlignment="center"
         android:textColor="#7C7C7C"
-        android:textSize="16sp"
-        android:textAlignment="center"/>
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/track_order"

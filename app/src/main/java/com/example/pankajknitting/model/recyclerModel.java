@@ -1,12 +1,12 @@
 package com.example.pankajknitting.model;
 
 public class recyclerModel {
-    int img;
+    String img;
     String desc;
-    double price;
+    String price;
 
     //Constructor
-    public recyclerModel(int img, String desc, double price) {
+    public recyclerModel(String img, String desc, String price) {
         this.img = img;
         this.desc = desc;
         this.price = price;
@@ -15,11 +15,11 @@ public class recyclerModel {
     //Getter and Setter
 
 
-    public int getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(int img) {
+    public void setImg(String img) {
         this.img = img;
     }
 
@@ -31,11 +31,11 @@ public class recyclerModel {
         this.desc = desc;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }

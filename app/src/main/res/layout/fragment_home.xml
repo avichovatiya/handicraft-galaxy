@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".HomeFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -32,39 +32,38 @@
         android:id="@+id/mainContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation"
         android:layout_below="@+id/searchBox">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
-<!--                android:id="@+id/exclusive"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="15dp"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                android:weightSum="50">-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/exclusive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="50">
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="47"-->
-<!--                    android:text="@string/exclusive_offer"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="47"
+                    android:text="@string/exclusive_offer"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="3"-->
-<!--                    android:clickable="true"-->
-<!--                    android:focusable="true"-->
-<!--                    android:text="@string/see_all"-->
-<!--                    android:textColor="@color/purple_pk"-->
-<!--                    android:textSize="14sp" />-->
-<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/see_all"
+                    android:textColor="@color/purple_pk"
+                    android:textSize="14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/ExclusiveOffer"
@@ -142,16 +141,5 @@
 
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:paddingVertical="5dp"
-        app:backgroundTint="@color/search_bar"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_navigation_menu" />
 
 </RelativeLayout>

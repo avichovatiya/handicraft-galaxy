@@ -18,7 +18,7 @@
     <string name="_91">+91</string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="your_order_has_been_naccepted">Your Order has been \naccepted</string>
-    <string name="your_items_has_been_placcd_and_is_on_nits_way_to_being_processed">Your items has been placcd and is on \nits way to being processed</string>
+    <string name="your_items_has_been_placcd_and_is_on_nits_way_to_being_processed">Your items has been placed and is on \nits way to being processed</string>
     <string name="track_order">Track Order</string>
     <string name="back_to_home">Back to Home</string>
     <string name="john_doe">John Doe</string>
@@ -29,4 +29,6 @@
     <string name="help">Help</string>
     <string name="about">About</string>
     <string name="log_out">Log Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
